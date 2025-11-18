@@ -1,0 +1,82 @@
+/* Formidable Accessible Error Summary
+   ----------------------------------- */
+
+.ff-global-errors {
+  margin: 1em 0;
+  padding: 1em;
+  border: 2px solid #c00;
+  border-radius: 6px;
+  background: #fff5f5;
+}
+
+.ff-global-errors h2 {
+  margin: 0 0 .5em;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #b00000;
+}
+
+.ff-error-list {
+  margin: .5em 0 0 1.25em;
+  padding: 0;
+}
+
+.ff-error-item {
+  margin-bottom: .25em;
+}
+
+.ff-error-link {
+  color: #b00000;
+  text-decoration: none;
+}
+
+.ff-error-link:hover,
+.ff-error-link:focus {
+  text-decoration: none;
+  outline: none;
+  color: #800000;
+}
+
+.ff-error-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .5em;
+  vertical-align: -0.15em;
+  background: url('data:image/svg+xml;utf8,<svg fill="%23b00000" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M10 0a10 10 0 1 0 10 10A10.011 10.011 0 0 0 10 0Zm1 15H9v-2h2Zm0-4H9V5h2Z"/></svg>') no-repeat center;
+  background-size: contain;
+}
+.frm_forms.with_frm_style .frm_error_style {
+  background-color: transparent;
+  border: 0;
+}
+/* Inline field error icon */
+.frm_error,
+.frm_inline_error,
+.frm_form_field .frm_error,
+.frm_form_field .frm_error_style .frm_error,
+.frm_forms.with_frm_style .frm_error {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.4em;
+  color: #b00000; /* sets currentColor for the icon */
+}
+/*Error Icon*/
+.ff-inline-error-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+  width: 1em;
+  height: 1em;
+  margin-top: 0.1em;
+}
+
+/* Make the SVG follow text color and size nicely */
+.ff-inline-error-icon svg {
+  width: 1em;
+  height: 1em;
+  display: block;
+  color: inherit;       /* for completeness */
+  fill: currentColor;   /* uses parent text color */
+}
