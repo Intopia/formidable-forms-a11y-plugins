@@ -202,6 +202,7 @@
       enhanceOtherInputs(document);
     }
     adjustInlineErrorRoles(document);
+    focusMessages(document);
     
 
     // Multi-page: handle following scenarios
@@ -236,6 +237,7 @@
         enhanceOtherInputs(document);
       }
       adjustInlineErrorRoles(document);
+      focusMessages(document);
       // Focus H1 only if a Next/Prev navigation was initiated (session flag)
       if (CFG.multi_page_focus) {
         if (consumeMpIntent()) {
